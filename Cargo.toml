@@ -1,0 +1,21 @@
+[package]
+name = "harmonia"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = { version = "4", features = ["rustls"] }
+actix-web-lab = "0.17"
+rustls = "0.20.2"
+rustls-pemfile = "1"
+actix-rt = "*"
+chrono = { version = "0.4", features = ["serde"] }
+env_logger = "0.6"
+lazy_static = "1.4"
+log = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+uuid = { version = "0.4", features = ["serde", "v4"] }
+curl = "0.4.44"
+actix-files = "0.6"
+cookie = "0.16"
+actix-session = { version = "0.7.2", features = ["cookie-session"] }
